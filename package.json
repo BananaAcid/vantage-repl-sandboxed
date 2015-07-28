@@ -1,0 +1,49 @@
+{
+  "name": "vantage-repl-sandboxed",
+  "version": "1.0.0",
+  "description": "Advanced REPL extension for vantage.js",
+  "main": "./lib/repl-sandboxed.js",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BananaAcid/vantage-repl-sandboxed.git"
+  },
+  "keywords": [
+    "api",
+    "cli",
+    "repl",
+    "vantage",
+    "vantagejs"
+  ],
+  "author": "BananaAcid",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BananaAcid/vantage-repl-sandboxed/issues"
+  },
+  "homepage": "https://github.com/BananaAcid/vantage-repl-sandboxed#readme",
+  "devDependencies": {
+  },
+  "optionalDependencies": {
+    "cardinal": "0.5.0"
+  },
+  "dependencies": {
+  },
+  "engines": {
+    "node": ">= 0.11.16",
+    "iojs": ">= 1.0.0"
+  },
+  "files": [
+    "lib"
+  ],
+  "eslintConfig": {
+    "env": {
+      "node": true,
+      "browser": false
+    },
+    "rules": {
+      "no-underscore-dangle": 0,
+      "no-process-exit": 0
+    }
+  }
+}
