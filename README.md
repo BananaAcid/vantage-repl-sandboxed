@@ -1,7 +1,7 @@
 # vantage-repl-sandboxed
 Advanced REPL extension for vantage.js
 
-  * regenerates the context each run REPL start
+  * regenerates the context each run / REPL start
   * provides a sandbox with newly created context basics (see initCtx, allows these functions to be overwritten within sandbox)
   * only options.context provided objects are really linked into the app
   * sports developer console inspection (just type an object, function name, whatever an press enter)
@@ -9,8 +9,11 @@ Advanced REPL extension for vantage.js
   * validates and makes the position of the faulty javascript statement
   * console.log/info/warn/error are also piped to a remote connection and do net mess up the prompt
   * functions get highlighted if all optional dependencies are installed
+  * remote vantage connections do get the results there (v1.0.1)
   * KNOWN: only single line statements are computed.
 
+Bugs:
+  * '..' and '..-' execute on the main server instance. Ventage.exec does not execute in the remote shell, and there is no this.exec (nothing i can do about)
 
 
 ##### Installation
@@ -79,7 +82,7 @@ node~$ version
 
   Commands:
 
-    version js          JS REPL version 1.0
+    version js          JS REPL version 1.0.1
 
 ```
 
